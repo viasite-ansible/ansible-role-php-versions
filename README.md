@@ -13,6 +13,7 @@ N/A
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
     php_version: '7.1'
+    php_versions_single: True
 
 The PHP version to be installed. Any [currently-supported PHP major version](http://php.net/supported-versions.php) is a valid option (e.g. `5.6`, `7.0`, `7.1`, etc.
 
