@@ -42,3 +42,4 @@ __php_packages:
   - "php{{ php_version }}-mysql"
   - "php{{ php_version }}-xdebug"
   - "php{{ php_version }}-zip"
+  - "php{{ php_version }}-bcmath" # for drupal commerce
