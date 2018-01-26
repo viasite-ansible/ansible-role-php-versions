@@ -1,0 +1,3 @@
+---
+- src: viasite-ansible.php
+  name: php

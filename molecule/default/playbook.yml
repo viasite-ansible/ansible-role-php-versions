@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: "True"
+  # ^ For vagrant
+  roles:
+    - ansible-role-php-versions
+    - php
