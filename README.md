@@ -12,11 +12,14 @@ N/A
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    php_version: '7.1'
-    php_versions_single: True
+    php_version: '7.3'
 
-The PHP version to be installed. Any [currently-supported PHP major version](http://php.net/supported-versions.php) is a valid option (e.g. `5.6`, `7.0`, `7.1`, etc.
+The PHP version to be installed. Any [currently-supported PHP major version](http://php.net/supported-versions.php) is a valid option (e.g. `7.2`, `7.3`, `7.4` etc.).
 
+
+    php_versions_install_recommends: false
+
+(For Debian OSes only) Whether to install recommended packages. This is set to `no` by default because setting it to `yes` often leads to multiple PHP versions being installed (thus making a bit of a mess) when using repos like Ondrej's PHP PPA for Ubuntu.
 ## Dependencies
 
   - geerlingguy.php is a soft dependency as the `php_version` variable is required to be set.
@@ -27,7 +30,7 @@ The PHP version to be installed. Any [currently-supported PHP major version](htt
     - hosts: webservers
     
       vars:
-        php_version: '7.1'
+        php_version: '7.3'
     
       roles:
         - role: geerlingguy.repo-remi
