@@ -37,7 +37,7 @@ __php_packages:
   - "php{{ php_version }}-sqlite3"
   - "php{{ php_version }}-xml"
   - "php{{ php_version }}-yaml"
-  - "php{{ php_version }}-memcached"
+  - "php-memcached"
   - "php{{ php_version }}-mysql"
   - "php{{ php_version }}-xdebug"
   - "php{{ php_version }}-zip"
